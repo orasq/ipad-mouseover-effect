@@ -1,0 +1,30 @@
+.notification {
+  display: flex;
+  position: relative;
+
+  padding: $hover_padding;
+  border-radius: $hover_radius;
+
+  &__icon {
+    font-size: 2rem;
+    color: $text_med_grey;
+  }
+
+  &__number {
+    position: absolute;
+    top: 0;
+    right: -5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20px;
+    width: 20px;
+    background-color: $purple;
+    border-radius: 50%;
+
+    font-size: 0.7rem;
+    color: #fff;
+  }
+}

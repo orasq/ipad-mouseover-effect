@@ -1,0 +1,32 @@
+.user {
+  display: flex;
+  align-items: center;
+  font-display: row;
+
+  &__avatar {
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    padding-left: 20px;
+  }
+
+  &__name {
+    margin-bottom: 7px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $text_dark_grey;
+  }
+
+  &__position {
+    font-size: 1rem;
+    color: $text_med_grey;
+  }
+}

@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg_grey;
+  border-right: 2px solid $line_light_grey;
+
+  &__logo,
+  &__settings {
+    padding: 40px;
+  }
+
+  &__logo {
+    font-size: 3rem;
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 30px;
+
+    & > * + * {
+      margin-top: 30px;
+    }
+  }
+
+  &__nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: $hover_padding calc($hover_padding * 2);
+    border-radius: $hover_radius;
+    color: $text_med_grey;
+
+    &--is-active {
+      background-color: #fff;
+      box-shadow: 0px 10px 20px 0px #dedede;
+    }
+  }
+
+  &__nav-item--is-active &__nav-icon {
+    color: $purple;
+  }
+
+  &__nav-item--is-active &__nav-text {
+    font-weight: 600;
+    color: $purple;
+  }
+
+  &__nav-icon {
+    font-size: 1.3rem;
+  }
+
+  &__nav-text {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  &__settings-icon {
+    display: flex; /* to avoid unwanted icon's padding */
+    padding: $hover_padding;
+    font-size: 1.6rem;
+    color: $text_med_grey;
+    border-radius: $hover_radius;
+
+    &--is-active {
+      background-color: #fff;
+      box-shadow: 0px 10px 20px 0px #dedede;
+    }
+  }
+}

@@ -7,11 +7,65 @@
       rel="stylesheet"
       type="text/css"
     />
-    <title>...</title>
-    <meta name="keywords" content="..." />
-    <meta name="description" content="..." />
+    <title>Ipad Mouseover Effect</title>
+    <meta name="keywords" content="ipad" />
+    <meta name="description" content="Mouseover effect on the iPad's IOS" />
   </head>
   <body>
-    <div class="example">Content here ...</div>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="header__logo">🤘</div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <ion-icon class="header__nav-icon" name="home"></ion-icon>
+              <span class="header__nav-text">Home</span>
+            </li>
+            <li class="header__nav-item">
+              <ion-icon class="header__nav-icon" name="wallet"></ion-icon>
+              <span class="header__nav-text">Finances</span>
+            </li>
+            <li class="header__nav-item header__nav-item--is-active">
+              <ion-icon class="header__nav-icon" name="calendar"></ion-icon>
+              <span class="header__nav-text">Calendar</span>
+            </li>
+            <li class="header__nav-item">
+              <ion-icon class="header__nav-icon" name="chatbubbles"></ion-icon>
+              <span class="header__nav-text">Messages</span>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__settings">
+          <div class="header__settings-icon">
+            <ion-icon name="settings-sharp"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <main class="content">Content</main>
+      <aside class="aside">
+        <header class="user">
+          <a href="#">
+            <img
+              class="user__avatar"
+              src="./assets/images/avatar.png"
+              alt="Perceval"
+            />
+          </a>
+          <div class="user__infos">
+            <span class="user__name">Kate Liss</span>
+            <span class="user__position">Freelancer</span>
+          </div>
+          <div class="notification">
+            <ion-icon
+              class="notification__icon"
+              name="notifications"
+            ></ion-icon>
+            <span class="notification__number">3</span>
+          </div>
+        </header>
+      </aside>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>

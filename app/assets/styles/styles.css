@@ -7,4 +7,9 @@
 @import "base/_global";
 
 /* MODULES */
-@import "modules/_example";
+@import "modules/_main-wrapper";
+@import "modules/_header";
+@import "modules/_content";
+@import "modules/_aside";
+@import "modules/_user";
+@import "modules/_notification";

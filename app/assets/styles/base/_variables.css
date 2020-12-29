@@ -1,3 +1,23 @@
 /* COLORS */
-$mainBlue: #2f5572;
-$mainOrange: #d59541;
+$purple: #9d63e2;
+$cyan: #55d6d3;
+$red: #f45757;
+$yellow: #f3cf50;
+
+$bg_blue: #edf8ff;
+$bg_grey: #fcfcfe;
+
+$line_light_grey: #efefef;
+
+$text_light_grey: #bec2d5;
+$text_med_grey: #afb3c3;
+$text_dark_grey: #262f56;
+
+/* FONTS */
+$nunito: "Nunito", sans-serif;
+
+/* BORDER-RADIUS */
+$hover_radius: 8px;
+
+/* PADDINGS */
+$hover_padding: 7px;
