@@ -15,3 +15,6 @@
 @import "modules/_notification";
 @import "modules/_searchbar";
 @import "modules/_taskcard";
+@import "modules/_upgrade";
+@import "modules/_calendar";
+@import "modules/_button";

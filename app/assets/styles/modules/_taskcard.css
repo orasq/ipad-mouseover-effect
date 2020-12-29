@@ -1,8 +1,8 @@
 .taskcard {
   padding: 20px 15px;
-  background-color: #fff;
-  border: 1px solid silver;
-  border-radius: $radius_base;
+  /*background-color: #fff;
+  border: 1px solid silver;*/
+  border-radius: $radius_small;
 
   list-style: none;
 
@@ -66,7 +66,7 @@
     font-size: 1rem;
     line-height: 1.3rem;
     font-weight: 300;
-    color: $text_med_grey;
+    color: $text_medium_grey;
   }
 
   &__infos {
@@ -74,7 +74,7 @@
 
     font-size: 0.9rem;
     font-weight: 600;
-    color: $text_med_grey;
+    color: $text_medium_grey;
   }
 
   &__infos-icon {

@@ -1,0 +1,12 @@
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+
+  background-color: $purple;
+  border: none;
+  border-radius: $radius_small;
+}

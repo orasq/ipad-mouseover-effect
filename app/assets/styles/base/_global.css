@@ -21,7 +21,18 @@ h6 {
   padding: 0;
 }
 
-ul {
+h1 {
+  font-size: 2.2rem;
+  color: $text_dark_grey;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: $text_dark_grey;
+}
+
+ul,
+ol {
   margin: 0;
   padding: 0;
 }

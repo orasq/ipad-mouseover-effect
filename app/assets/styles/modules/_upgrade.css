@@ -1,0 +1,14 @@
+.upgrade {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 30px 25px;
+  background-color: #ccf3f2;
+  border-radius: $radius_big;
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+}

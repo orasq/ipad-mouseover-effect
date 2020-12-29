@@ -14,14 +14,17 @@ $surface_grey: #f5f6f8;
 $line_light_grey: #efefef;
 
 $text_light_grey: #bec2d5;
-$text_med_grey: #afb3c3;
+$text_medium_grey: #afb3c3;
 $text_dark_grey: #262f56;
 
 /* FONTS */
 $nunito: "Nunito", sans-serif;
 
 /* BORDER-RADIUS */
-$radius_base: 10px;
+
+$radius_small: 10px;
+$radius_medium: 16px;
+$radius_big: 30px;
 $radius_hover: 8px;
 
 /* PADDINGS */
@@ -29,5 +32,5 @@ $hover_padding: 7px;
 
 /* ANIMATION */
 $anim_fast: 0.2s;
-$anim_med: 0.6s;
+$anim_medium: 0.6s;
 $anim_slow: 1s;

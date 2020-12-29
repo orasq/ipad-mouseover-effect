@@ -40,7 +40,7 @@
     list-style: none;
     padding: $hover_padding calc($hover_padding * 2);
     border-radius: $radius_hover;
-    color: $text_med_grey;
+    color: $text_medium_grey;
 
     /*&--is-active {
       background-color: #fff;
@@ -71,7 +71,7 @@
     display: flex; /* to avoid unwanted icon's padding */
     padding: $hover_padding;
     font-size: 1.6rem;
-    color: $text_med_grey;
+    color: $text_medium_grey;
     border-radius: $radius_hover;
 
     &--is-active {
