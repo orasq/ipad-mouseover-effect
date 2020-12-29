@@ -1,0 +1,108 @@
+.taskcard {
+  padding: 20px 15px;
+  background-color: #fff;
+  border: 1px solid silver;
+  border-radius: $radius_base;
+
+  list-style: none;
+
+  /* space between different card sections */
+  & > * + * {
+    margin-top: 15px;
+  }
+
+  &__container {
+    position: relative;
+    flex-grow: 1; /* to allow scroll on flexible element */
+    overflow: auto;
+    min-height: 0; /* Firefox */
+
+    /* create space for scrollbar, and avoid overlap with cards */
+    padding-right: 20px;
+    margin-right: -20px;
+
+    /*mask: linear-gradient(to top, transparent 1%, black 8%),
+      linear-gradient(to bottom, transparent 1%, black 8%);
+    mask-composite: intersect; */
+
+    & > * + * {
+      margin-top: 22px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__colortag {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-right: 20px;
+    background-color: $surface_grey;
+    border-radius: 50%;
+
+    &--purple {
+      background-color: $purple;
+    }
+
+    &--yellow {
+      background-color: $yellow;
+    }
+
+    &--cyan {
+      background-color: $cyan;
+    }
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    color: $text_dark_grey;
+  }
+
+  &__content {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 300;
+    color: $text_med_grey;
+  }
+
+  &__infos {
+    display: flex;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $text_med_grey;
+  }
+
+  &__infos-icon {
+    margin-right: 10px;
+    font-size: 0.9rem;
+
+    &--high-priority {
+      color: $red;
+    }
+
+    &--middle-priority {
+      color: $orange;
+    }
+
+    &--low-priority {
+      color: $green;
+    }
+  }
+
+  &__priority {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__deadline {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}

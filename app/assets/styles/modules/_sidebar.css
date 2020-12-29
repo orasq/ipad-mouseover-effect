@@ -1,0 +1,39 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  padding: 35px;
+  background: linear-gradient(to top, #f2f2f7, #fff);
+
+  & > * + * {
+    margin-top: 30px;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &--tasks {
+      flex: 1;
+    }
+  }
+
+  /* create wrapper with fixed height (position absolute 0 0 0 0)
+  to use 'flex-grow' on task list and have scroll on flexible block */
+  &__tasks-wrap {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: $text_med_grey;
+  }
+}

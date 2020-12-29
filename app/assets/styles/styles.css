@@ -10,6 +10,8 @@
 @import "modules/_main-wrapper";
 @import "modules/_header";
 @import "modules/_content";
-@import "modules/_aside";
+@import "modules/_sidebar";
 @import "modules/_user";
 @import "modules/_notification";
+@import "modules/_searchbar";
+@import "modules/_taskcard";

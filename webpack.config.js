@@ -122,7 +122,7 @@ if (currentTask == "build") {
   /* MiniCssExtractPlugin loader */
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
   /* minify css file */
-  postCSSPlugins.push(require("cssnano"));
+  //postCSSPlugins.push(require("cssnano")); // causes CSS rules to disappear, so suspended till fixed
   /* where should the bundled js file be placed */
   config.output = {
     /* generate 'random' file names (cache busting) */

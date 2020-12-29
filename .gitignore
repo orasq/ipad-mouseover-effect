@@ -1,4 +1,5 @@
 node_modules/**/*
+.vscode
 
 # macOS
 .DS_Store

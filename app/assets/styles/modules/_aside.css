@@ -1,8 +1,0 @@
-.aside {
-  padding: 35px;
-  background: linear-gradient(to top, #f2f2f7, #fff);
-
-  &__notif {
-    background-color: lime;
-  }
-}
