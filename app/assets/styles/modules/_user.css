@@ -8,6 +8,7 @@
     width: 65px;
     object-fit: cover;
     border-radius: 50%;
+    overflow: hidden;
 
     &--small {
       max-height: 35px;
@@ -19,12 +20,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     width: 200px;
     padding-left: 20px;
   }
 
   &__name {
-    margin-bottom: 7px;
+    display: inline;
+    margin-bottom: 2px;
+    margin-left: -$hover_padding;
+    padding: calc($hover_padding / 2) $hover_padding;
+    border-radius: $radius_hover;
     font-size: 1.4rem;
     font-weight: 600;
     color: $text_dark_grey;

@@ -12,495 +12,421 @@
     <meta name="description" content="Mouseover effect on the iPad's IOS" />
   </head>
   <body>
-    <div class="main-wrapper">
-      <!-- HEADER -->
-      <header class="header">
-        <div class="header__logo">🤘</div>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li>
-              <a href="#" class="header__nav-item">
-                <ion-icon class="header__nav-icon" name="home"></ion-icon>
-                <span class="header__nav-text">Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="header__nav-item">
-                <ion-icon class="header__nav-icon" name="wallet"></ion-icon>
-                <span class="header__nav-text">Finances</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="header__nav-item header__nav-item--is-active">
-                <ion-icon class="header__nav-icon" name="calendar"></ion-icon>
-                <span class="header__nav-text">Calendar</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="header__nav-item">
-                <ion-icon
-                  class="header__nav-icon"
-                  name="chatbubbles"
-                ></ion-icon>
-                <span class="header__nav-text">Messages</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__tools">
-          <a href="#" class="header__avatar-icon">
-            <img
-              class="user__avatar user__avatar--small"
-              src="./assets/images/avatar.jpg"
-              alt="Perceval"
-            />
-          </a>
-          <a href="#" class="header__tools-icon">
-            <ion-icon name="settings-sharp"></ion-icon>
-          </a>
-          <div class="header__tools-icon header__menu-icon">
-            <ion-icon name="menu"></ion-icon>
-          </div>
-        </div>
-      </header>
-
-      <!-- CONTENT -->
-      <main class="content">
-        <header class="content__header">
-          <h1>Calendar</h1>
-          <div class="upgrade">
-            <div class="upgrade__txt">
-              <h2>Upgrade to premium!</h2>
-              <p>Go Pro to unlock all features</p>
-            </div>
-            <button class="button">Upgrade Now</button>
-          </div>
-        </header>
-        <section class="calendar">
-          <header class="calendar__header">
-            <span class="calendar__month-txt">April</span>
-            <span class="calendar__today-txt">Today, 2 Apr, 2020</span>
-          </header>
-          <div class="calendar__wrap">
-            <ol class="calendar__days-name">
-              <li>mon</li>
-              <li>tue</li>
-              <li>wen</li>
-              <li>thu</li>
-              <li>fri</li>
-              <li>sat</li>
-              <li>sun</li>
-            </ol>
-            <ol class="calendar__week-days">
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
+    <div class="bg">
+      <div class="main-wrapper">
+        <!-- HEADER -->
+        <header class="header">
+          <div class="header__logo">🤘</div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
               <li>
-                <a href="#" class="calendar__day calendar__day--busy">
-                  <div class="calendar__task">
-                    <div class="calendar__task-tags-wrap">
-                      <span
-                        class="calendar__task-tag calendar__task-tag--purple"
-                      ></span>
-                      <span
-                        class="calendar__task-tag calendar__task-tag--cyan"
-                      ></span>
-                    </div>
-                    <span class="calendar__task-counter"> 2 tasks </span>
-                  </div>
+                <a href="#" class="header__nav-item" data-hover>
+                  <ion-icon class="header__nav-icon" name="home"></ion-icon>
+                  <span class="header__nav-text">Home</span>
                 </a>
               </li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
               <li>
-                <a href="#" class="calendar__day calendar__day--busy">
-                  <div class="calendar__task">
-                    <div class="calendar__task-tags-wrap">
-                      <span
-                        class="calendar__task-tag calendar__task-tag--yellow"
-                      ></span>
-                      <span
-                        class="calendar__task-tag calendar__task-tag--purple"
-                      ></span>
-                    </div>
-                    <span class="calendar__task-counter"> 6 tasks </span>
-                  </div>
+                <a href="#" class="header__nav-item" data-hover>
+                  <ion-icon class="header__nav-icon" name="wallet"></ion-icon>
+                  <span class="header__nav-text">Finances</span>
                 </a>
               </li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
               <li>
-                <a href="#" class="calendar__day calendar__day--busy">
-                  <div class="calendar__task">
-                    <div class="calendar__task-tags-wrap">
-                      <span
-                        class="calendar__task-tag calendar__task-tag--cyan"
-                      ></span>
-                      <span
-                        class="calendar__task-tag calendar__task-tag--yellow"
-                      ></span>
-                    </div>
-                    <span class="calendar__task-counter"> 2 tasks </span>
-                  </div>
+                <a href="#" class="header__nav-item header__nav-item--is-active" data-hover>
+                  <ion-icon class="header__nav-icon" name="calendar"></ion-icon>
+                  <span class="header__nav-text">Calendar</span>
                 </a>
               </li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-              <li><a href="#" class="calendar__day"></a></li>
-            </ol>
-          </div>
-        </section>
-      </main>
-
-      <!-- SIDEBAR -->
-      <aside class="sidebar">
-        <header class="user">
-          <a href="#">
-            <img
-              class="user__avatar"
-              src="./assets/images/avatar.jpg"
-              alt="Perceval"
-            />
-          </a>
-          <div class="user__infos">
-            <a href="#" class="user__name">Kate Liss</a>
-            <span class="user__position">Freelancer</span>
-          </div>
-          <a href="#" class="notification">
-            <ion-icon
-              class="notification__icon"
-              name="notifications"
-            ></ion-icon>
-            <span class="notification__number">3</span>
-          </a>
-        </header>
-        <section class="sidebar__section">
-          <div class="searchbar">
-            <input
-              class="searchbar__input"
-              type="text"
-              placeholder="Search ..."
-            />
-            <button class="searchbar__btn">
-              <ion-icon name="search"></ion-icon>
-            </button>
-          </div>
-        </section>
-        <section class="sidebar__section sidebar__section--tasks">
-          <div class="sidebar__tasks-wrap">
-            <h3 class="sidebar__title">My tasks</h3>
-            <ul class="taskcard__container">
-              <!-- CARD -->
               <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--purple"
-                    ></span>
-                    <h4 class="taskcard__title">Create Homepage</h4>
-                  </header>
-                  <div class="taskcard__content"></div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>High Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-4">4 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--cyan"
-                    ></span>
-                    <h4 class="taskcard__title">Create Illustration</h4>
-                  </header>
-                  <div class="taskcard__content"></div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>High Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-4">4 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--cyan"
-                    ></span>
-                    <h4 class="taskcard__title">Draw logo's concepts</h4>
-                  </header>
-                  <div class="taskcard__content">
-                    It is necessary to draw logos for the network of bakeries.
-                    Focus on organic texture.
-                  </div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--middle-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>Middle Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-14">14 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--yellow"
-                    ></span>
-                    <h4 class="taskcard__title">Competitor Analysis</h4>
-                  </header>
-                  <div class="taskcard__content"></div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--low-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>Low Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-14">14 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--yellow"
-                    ></span>
-                    <h4 class="taskcard__title">Concept of Homepage</h4>
-                  </header>
-                  <div class="taskcard__content"></div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="flame"
-                      ></ion-icon>
-                      <span>No Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-14">14 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--purple"
-                    ></span>
-                    <h4 class="taskcard__title">Make Moodboard</h4>
-                  </header>
-                  <div class="taskcard__content">
-                    Show different illustrations and styles for a mobile
-                    application
-                  </div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--middle-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>Middle Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-14">14 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--purple"
-                    ></span>
-                    <h4 class="taskcard__title">New Wireframe</h4>
-                  </header>
-                  <div class="taskcard__content">
-                    Obcaecati velit reprehenderit messi voluptatum illum.
-                  </div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--low-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>Low Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-14">14 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--purple"
-                    ></span>
-                    <h4 class="taskcard__title">Prepare business meeting</h4>
-                  </header>
-                  <div class="taskcard__content"></div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--low-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>Low Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-14">14 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--cyan"
-                    ></span>
-                    <h4 class="taskcard__title">Get rid of Bootstrap</h4>
-                  </header>
-                  <div class="taskcard__content"></div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>High Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-24">24 Apr, 2020</time>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- CARD -->
-              <li>
-                <a href="#" class="taskcard">
-                  <header class="taskcard__header">
-                    <span
-                      class="taskcard__colortag taskcard__colortag--yellow"
-                    ></span>
-                    <h4 class="taskcard__title">Make a cup of tea</h4>
-                  </header>
-                  <div class="taskcard__content">Magnam voluptatum cumque?</div>
-                  <div class="taskcard__infos">
-                    <div class="taskcard__priority">
-                      <ion-icon
-                        class="taskcard__infos-icon taskcard__infos-icon--low-priority"
-                        name="flame"
-                      ></ion-icon>
-                      <span>Low Priority</span>
-                    </div>
-                    <div class="taskcard__deadline">
-                      <ion-icon
-                        class="taskcard__infos-icon"
-                        name="stopwatch"
-                      ></ion-icon>
-                      <time datetime="2020-4-24">24 Apr, 2020</time>
-                    </div>
-                  </div>
+                <a href="#" class="header__nav-item" data-hover>
+                  <ion-icon class="header__nav-icon" name="chatbubbles"></ion-icon>
+                  <span class="header__nav-text">Messages</span>
                 </a>
               </li>
             </ul>
+          </nav>
+          <div class="header__tools">
+            <a href="#" class="header__avatar-icon" data-hover>
+              <img
+                class="user__avatar user__avatar--small"
+                src="./assets/images/avatar.jpg"
+                alt="Perceval"
+              />
+            </a>
+            <a href="#" class="header__tools-icon" data-hover>
+              <ion-icon name="settings-sharp"></ion-icon>
+            </a>
+            <div class="header__tools-icon header__menu-icon" data-hover>
+              <ion-icon name="menu"></ion-icon>
+            </div>
           </div>
-        </section>
-      </aside>
+        </header>
+
+        <!-- CONTENT -->
+        <main class="content">
+          <header class="content__header">
+            <h1>Calendar</h1>
+            <div class="upgrade">
+              <div class="upgrade__txt">
+                <h2>Upgrade to premium!</h2>
+                <p>Go Pro to unlock all features</p>
+              </div>
+              <button class="button" data-hover>Upgrade Now</button>
+            </div>
+          </header>
+          <section class="calendar">
+            <header class="calendar__header">
+              <span class="calendar__month-txt">April</span>
+              <span class="calendar__today-txt">Today, 2 Apr, 2020</span>
+            </header>
+            <div class="calendar__wrap">
+              <ol class="calendar__days-name">
+                <li>mon</li>
+                <li>tue</li>
+                <li>wen</li>
+                <li>thu</li>
+                <li>fri</li>
+                <li>sat</li>
+                <li>sun</li>
+              </ol>
+              <ol class="calendar__week-days">
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li>
+                  <a href="#" class="calendar__day calendar__day--busy" data-hover>
+                    <div class="calendar__task">
+                      <div class="calendar__task-tags-wrap">
+                        <span class="calendar__task-tag calendar__task-tag--purple"></span>
+                        <span class="calendar__task-tag calendar__task-tag--cyan"></span>
+                      </div>
+                      <span class="calendar__task-counter"> 2 tasks </span>
+                    </div>
+                  </a>
+                </li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li>
+                  <a href="#" class="calendar__day calendar__day--busy" data-hover>
+                    <div class="calendar__task">
+                      <div class="calendar__task-tags-wrap">
+                        <span class="calendar__task-tag calendar__task-tag--yellow"></span>
+                        <span class="calendar__task-tag calendar__task-tag--purple"></span>
+                      </div>
+                      <span class="calendar__task-counter"> 6 tasks </span>
+                    </div>
+                  </a>
+                </li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li>
+                  <a href="#" class="calendar__day calendar__day--busy" data-hover>
+                    <div class="calendar__task">
+                      <div class="calendar__task-tags-wrap">
+                        <span class="calendar__task-tag calendar__task-tag--cyan"></span>
+                        <span class="calendar__task-tag calendar__task-tag--yellow"></span>
+                      </div>
+                      <span class="calendar__task-counter"> 2 tasks </span>
+                    </div>
+                  </a>
+                </li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+                <li><a href="#" class="calendar__day" data-hover></a></li>
+              </ol>
+            </div>
+          </section>
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <header class="user">
+            <a href="#" class="user__avatar" data-hover>
+              <img src="./assets/images/avatar.jpg" alt="Perceval" />
+            </a>
+            <div class="user__infos">
+              <a href="#" class="user__name" data-hover>Kate Liss</a>
+              <span class="user__position">Freelancer</span>
+            </div>
+            <a href="#" class="notification" data-hover>
+              <ion-icon class="notification__icon" name="notifications"></ion-icon>
+              <span class="notification__number">3</span>
+            </a>
+          </header>
+          <section class="sidebar__section">
+            <div class="searchbar">
+              <input class="searchbar__input" type="text" placeholder="Search ..." />
+              <button class="searchbar__btn" data-hover>
+                <ion-icon name="search"></ion-icon>
+              </button>
+            </div>
+          </section>
+          <section class="sidebar__section sidebar__section--tasks">
+            <div class="sidebar__tasks-wrap">
+              <h3 class="sidebar__title">My tasks</h3>
+              <ul class="taskcard__container">
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--purple"></span>
+                      <h4 class="taskcard__title">Create Homepage</h4>
+                    </header>
+                    <div class="taskcard__content"></div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--high-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>High Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-4">4 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--cyan"></span>
+                      <h4 class="taskcard__title">Create Illustration</h4>
+                    </header>
+                    <div class="taskcard__content"></div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--high-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>High Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-4">4 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--cyan"></span>
+                      <h4 class="taskcard__title">Draw logo's concepts</h4>
+                    </header>
+                    <div class="taskcard__content">
+                      It is necessary to draw logos for the network of bakeries. Focus on organic
+                      texture.
+                    </div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--middle-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>Middle Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-14">14 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--yellow"></span>
+                      <h4 class="taskcard__title">Competitor Analysis</h4>
+                    </header>
+                    <div class="taskcard__content"></div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--low-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>Low Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-14">14 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--yellow"></span>
+                      <h4 class="taskcard__title">Concept of Homepage</h4>
+                    </header>
+                    <div class="taskcard__content"></div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon class="taskcard__infos-icon" name="flame"></ion-icon>
+                        <span>No Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-14">14 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--purple"></span>
+                      <h4 class="taskcard__title">Make Moodboard</h4>
+                    </header>
+                    <div class="taskcard__content">
+                      Show different illustrations and styles for a mobile application
+                    </div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--middle-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>Middle Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-14">14 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--purple"></span>
+                      <h4 class="taskcard__title">New Wireframe</h4>
+                    </header>
+                    <div class="taskcard__content">
+                      Obcaecati velit reprehenderit messi voluptatum illum.
+                    </div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--low-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>Low Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-14">14 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--purple"></span>
+                      <h4 class="taskcard__title">Prepare business meeting</h4>
+                    </header>
+                    <div class="taskcard__content"></div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--low-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>Low Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-14">14 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--cyan"></span>
+                      <h4 class="taskcard__title">Get rid of Bootstrap</h4>
+                    </header>
+                    <div class="taskcard__content"></div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--high-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>High Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-24">24 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- CARD -->
+                <li>
+                  <a href="#" class="taskcard" data-hover>
+                    <header class="taskcard__header">
+                      <span class="taskcard__colortag taskcard__colortag--yellow"></span>
+                      <h4 class="taskcard__title">Make a cup of tea</h4>
+                    </header>
+                    <div class="taskcard__content">Magnam voluptatum cumque?</div>
+                    <div class="taskcard__infos">
+                      <div class="taskcard__priority">
+                        <ion-icon
+                          class="taskcard__infos-icon taskcard__infos-icon--low-priority"
+                          name="flame"
+                        ></ion-icon>
+                        <span>Low Priority</span>
+                      </div>
+                      <div class="taskcard__deadline">
+                        <ion-icon class="taskcard__infos-icon" name="stopwatch"></ion-icon>
+                        <time datetime="2020-4-24">24 Apr, 2020</time>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+      </div>
     </div>
 
+    <!-- CURSOR -->
+    <span class="cursor"></span>
+
+    <!-- SCRIPTS -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>

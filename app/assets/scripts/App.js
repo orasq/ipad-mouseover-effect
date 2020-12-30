@@ -8,13 +8,8 @@ Add "lazyload" class to <img> tags, and change 'srcset' to 'data-srcset'*/
 import "lazysizes";
 
 // Function import
-import FunctionBase from "./modules/FunctionBase";
-FunctionBase();
-
-// Class import
-import ClassBase from "./modules/ClassBase";
-new ClassBase(/*arg1, arg2*/);
-new ClassBase(/*arg1, arg2*/);
+import Cursor from "./modules/Cursor";
+Cursor();
 
 /* allows webpack's hot modules replacements */
 if (module.hot) {

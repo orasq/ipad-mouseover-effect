@@ -3,6 +3,11 @@ html {
 }
 
 body {
+  position: relative;
+  cursor: none;
+}
+
+.bg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +49,12 @@ ol {
 
 a {
   text-decoration: none;
+  cursor: none;
+}
+
+button,
+input {
+  cursor: none;
 }
 
 img {
@@ -64,16 +75,13 @@ img {
   font-weight: 200;
   src: url("./assets/fonts/nunito/nunito-v16-latin-200.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("./assets/fonts/nunito/nunito-v16-latin-200.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-200.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("./assets/fonts/nunito/nunito-v16-latin-200.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-200.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("./assets/fonts/nunito/nunito-v16-latin-200.svg#Nunito") format("svg"); /* Legacy iOS */
+    url("./assets/fonts/nunito/nunito-v16-latin-200.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-200.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-200.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-200.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-200.svg#Nunito")
+      format("svg"); /* Legacy iOS */
 }
 /* nunito-300 - latin */
 @font-face {
@@ -82,16 +90,13 @@ img {
   font-weight: 300;
   src: url("./assets/fonts/nunito/nunito-v16-latin-300.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("./assets/fonts/nunito/nunito-v16-latin-300.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-300.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("./assets/fonts/nunito/nunito-v16-latin-300.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-300.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("./assets/fonts/nunito/nunito-v16-latin-300.svg#Nunito") format("svg"); /* Legacy iOS */
+    url("./assets/fonts/nunito/nunito-v16-latin-300.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-300.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-300.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-300.svg#Nunito")
+      format("svg"); /* Legacy iOS */
 }
 /* nunito-regular - latin */
 @font-face {
@@ -100,17 +105,13 @@ img {
   font-weight: 400;
   src: url("./assets/fonts/nunito/nunito-v16-latin-regular.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("./assets/fonts/nunito/nunito-v16-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("./assets/fonts/nunito/nunito-v16-latin-regular.woff") format("woff"),
-    /* Modern Browsers */
-      url("./assets/fonts/nunito/nunito-v16-latin-regular.ttf")
+    url("./assets/fonts/nunito/nunito-v16-latin-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-regular.ttf")
       format("truetype"),
-    /* Safari, Android, iOS */
-      url("./assets/fonts/nunito/nunito-v16-latin-regular.svg#Nunito")
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-regular.svg#Nunito")
       format("svg"); /* Legacy iOS */
 }
 /* nunito-600 - latin */
@@ -120,16 +121,13 @@ img {
   font-weight: 600;
   src: url("./assets/fonts/nunito/nunito-v16-latin-600.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("./assets/fonts/nunito/nunito-v16-latin-600.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-600.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("./assets/fonts/nunito/nunito-v16-latin-600.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-600.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("./assets/fonts/nunito/nunito-v16-latin-600.svg#Nunito") format("svg"); /* Legacy iOS */
+    url("./assets/fonts/nunito/nunito-v16-latin-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-600.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-600.svg#Nunito")
+      format("svg"); /* Legacy iOS */
 }
 /* nunito-700 - latin */
 @font-face {
@@ -138,16 +136,13 @@ img {
   font-weight: 700;
   src: url("./assets/fonts/nunito/nunito-v16-latin-700.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("./assets/fonts/nunito/nunito-v16-latin-700.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-700.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("./assets/fonts/nunito/nunito-v16-latin-700.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-700.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("./assets/fonts/nunito/nunito-v16-latin-700.svg#Nunito") format("svg"); /* Legacy iOS */
+    url("./assets/fonts/nunito/nunito-v16-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-700.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-700.svg#Nunito")
+      format("svg"); /* Legacy iOS */
 }
 /* nunito-800 - latin */
 @font-face {
@@ -156,16 +151,13 @@ img {
   font-weight: 800;
   src: url("./assets/fonts/nunito/nunito-v16-latin-800.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("./assets/fonts/nunito/nunito-v16-latin-800.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-800.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("./assets/fonts/nunito/nunito-v16-latin-800.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-800.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("./assets/fonts/nunito/nunito-v16-latin-800.svg#Nunito") format("svg"); /* Legacy iOS */
+    url("./assets/fonts/nunito/nunito-v16-latin-800.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-800.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-800.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-800.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-800.svg#Nunito")
+      format("svg"); /* Legacy iOS */
 }
 /* nunito-900 - latin */
 @font-face {
@@ -174,14 +166,11 @@ img {
   font-weight: 900;
   src: url("./assets/fonts/nunito/nunito-v16-latin-900.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("./assets/fonts/nunito/nunito-v16-latin-900.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-900.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("./assets/fonts/nunito/nunito-v16-latin-900.woff") format("woff"),
-    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-900.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("./assets/fonts/nunito/nunito-v16-latin-900.svg#Nunito") format("svg"); /* Legacy iOS */
+    url("./assets/fonts/nunito/nunito-v16-latin-900.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-900.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-900.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-900.svg#Nunito")
+      format("svg"); /* Legacy iOS */
 }
