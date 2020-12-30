@@ -3,11 +3,15 @@
   display: flex;
   flex-direction: column;
 
-  padding: 20px;
+  padding: 10px;
 
   background-color: #fff;
   border-radius: var(--radius_big);
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+
+  @mixin s_screen {
+    padding: 20px;
+  }
 
   &__header {
     display: flex;
@@ -17,15 +21,23 @@
   }
 
   &__month-txt {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: $text_dark_grey;
+
+    @mixin s_screen {
+      font-size: 1.1rem;
+    }
   }
 
   &__today-txt {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: $purple;
+
+    @mixin s_screen {
+      font-size: 0.9rem;
+    }
   }
 
   &__wrap {
@@ -37,17 +49,31 @@
   &__days-name {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
+    gap: 5px;
+    padding-bottom: 5px;
     border-bottom: 1px solid $line_light_grey;
 
+    @mixin s_screen {
+      gap: 15px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+    }
+
     li {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       font-weight: 600;
       color: $text_light_grey;
       text-transform: uppercase;
+      text-align: center;
       list-style: none;
+
+      overflow: hidden;
+      white-space: nowrap;
+
+      @mixin s_screen {
+        font-size: 0.9rem;
+        text-align: left;
+      }
     }
   }
 
@@ -57,9 +83,15 @@
     justify-content: center;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 15px;
-
     counter-reset: days;
+
+    @mixin s_screen {
+      gap: 5px;
+    }
+
+    @mixin s_screen {
+      gap: 15px;
+    }
   }
 
   &__day {
@@ -68,12 +100,20 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    padding: 10px;
+    padding: 5px;
+    padding-top: 30px;
+    border-bottom: 1px solid $line_light_grey;
+    border-right: 1px solid $line_light_grey;
     background-color: $surface_grey;
-    border-radius: $radius_medium;
     list-style: none;
-
     counter-increment: days;
+
+    @mixin s_screen {
+      padding: 10px;
+      padding-top: 30px;
+      border: none;
+      border-radius: $radius_medium;
+    }
 
     &:first-child {
       grid-column-start: 3;
@@ -82,12 +122,17 @@
     &::after {
       content: counter(days);
       position: absolute;
-      top: 15px;
-      left: 10px;
+      top: 8px;
+      left: 5px;
 
       font-size: 0.8rem;
       font-weight: 800;
       color: $text_medium_grey;
+
+      @mixin s_screen {
+        top: 15px;
+        left: 10px;
+      }
     }
 
     &--busy {
@@ -105,12 +150,35 @@
     flex-direction: column;
   }
 
+  &__task-tags-wrap {
+    display: flex;
+    justify-content: center;
+    font-size: 0; /* remove default space between 'inline-block'span */
+
+    @mixin s_screen {
+      justify-content: flex-start;
+    }
+
+    & > * + * {
+      margin-left: 1vw;
+
+      @mixin s_screen {
+        margin-left: 5px;
+      }
+    }
+  }
+
   &__task-tag {
     display: inline-block;
-    height: 7px;
-    width: 7px;
+    height: 4px;
+    width: 4px;
     background-color: $surface_grey;
     border-radius: 50%;
+
+    @mixin s_screen {
+      height: 7px;
+      width: 7px;
+    }
 
     &--purple {
       background-color: $purple;
@@ -126,9 +194,14 @@
   }
 
   &__task-counter {
+    display: none;
     margin-top: 5px;
     font-size: 0.8rem;
     font-weight: 800;
     color: $text_dark_grey;
+
+    @mixin m_screen {
+      display: block;
+    }
   }
 }

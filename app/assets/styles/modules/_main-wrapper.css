@@ -4,8 +4,6 @@
   display: flex;
   flex-direction: column;
 
-  height: 100vh;
-  max-height: 985px;
   width: 100vw;
   max-width: 1475px;
 
@@ -15,6 +13,8 @@
   overflow: hidden;
 
   @mixin l_screen {
+    height: 100vh;
+    max-height: 985px;
     border-radius: 50px;
     flex-direction: row;
   }

@@ -5,7 +5,8 @@
   align-items: center;
 
   padding: 10px;
-  background-color: #ccf3f2;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: linear-gradient(45deg, #ccf3f2, #a4d7e6);
   border-radius: var(--radius_big);
 
   @media screen and (min-width: 450px) {
