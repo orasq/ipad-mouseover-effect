@@ -24,8 +24,15 @@ $nunito: "Nunito", sans-serif;
 
 $radius_small: 10px;
 $radius_medium: 16px;
-$radius_big: 30px;
 $radius_hover: 8px;
+
+:root {
+  --radius_big: 15px;
+
+  @mixin m_screen {
+    --radius_big: 30px;
+  }
+}
 
 /* PADDINGS */
 $hover_padding: 7px;

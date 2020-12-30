@@ -1,14 +1,71 @@
 .upgrade {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-  padding: 30px 25px;
+  padding: 10px;
   background-color: #ccf3f2;
-  border-radius: $radius_big;
+  border-radius: var(--radius_big);
+
+  @media screen and (min-width: 450px) {
+    display: flex;
+  }
+
+  @mixin m_screen {
+    padding: 20px;
+  }
+
+  @mixin l_screen {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 30px 25px;
+  }
+
+  &__txt {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+    &::before {
+      content: "✨👑✨";
+    }
+
+    @mixin s_screen {
+      margin-right: 30px;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  h2 {
+    display: none;
+    font-size: 1rem;
+    color: $text_dark_grey;
+
+    @mixin s_screen {
+      display: block;
+    }
+
+    @mixin m_screen {
+      font-size: 1.2rem;
+    }
+
+    @mixin l_screen {
+      font-size: 1.6rem;
+    }
+  }
 
   p {
+    display: none;
     font-size: 0.9rem;
     font-weight: 200;
+
+    @mixin l_screen {
+      display: block;
+    }
   }
 }

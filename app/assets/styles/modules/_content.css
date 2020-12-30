@@ -2,10 +2,32 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 45px;
+  padding: 25px;
   background-color: #fff;
 
+  @mixin l_screen {
+    padding: 45px;
+  }
+
   & > * + * {
-    margin-top: 30px;
+    margin-top: 20px;
+
+    @mixin l_screen {
+      margin-top: 30px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @mixin l_screen {
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: stretch;
+    }
   }
 }

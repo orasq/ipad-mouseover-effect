@@ -6,7 +6,7 @@
   padding: 20px;
 
   background-color: #fff;
-  border-radius: $radius_big;
+  border-radius: var(--radius_big);
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
 
   &__header {
