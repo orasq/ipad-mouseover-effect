@@ -43,6 +43,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      color: $text_medium_grey;
+    }
   }
 
   &__nav-list {
@@ -50,6 +58,8 @@
     flex-direction: row;
     align-items: flex-start;
     margin: 0 30px;
+    list-style: none;
+    color: $text_medium_grey;
 
     @mixin s_screen {
       display: flex;
@@ -76,10 +86,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    list-style: none;
     padding: $hover_padding calc($hover_padding * 2);
     border-radius: $radius_hover;
-    color: $text_medium_grey;
 
     /*&--is-active {
       background-color: #fff;

@@ -18,21 +18,32 @@
         <div class="header__logo">🤘</div>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <ion-icon class="header__nav-icon" name="home"></ion-icon>
-              <span class="header__nav-text">Home</span>
+            <li>
+              <a href="#" class="header__nav-item">
+                <ion-icon class="header__nav-icon" name="home"></ion-icon>
+                <span class="header__nav-text">Home</span>
+              </a>
             </li>
-            <li class="header__nav-item">
-              <ion-icon class="header__nav-icon" name="wallet"></ion-icon>
-              <span class="header__nav-text">Finances</span>
+            <li>
+              <a href="#" class="header__nav-item">
+                <ion-icon class="header__nav-icon" name="wallet"></ion-icon>
+                <span class="header__nav-text">Finances</span>
+              </a>
             </li>
-            <li class="header__nav-item header__nav-item--is-active">
-              <ion-icon class="header__nav-icon" name="calendar"></ion-icon>
-              <span class="header__nav-text">Calendar</span>
+            <li>
+              <a href="#" class="header__nav-item header__nav-item--is-active">
+                <ion-icon class="header__nav-icon" name="calendar"></ion-icon>
+                <span class="header__nav-text">Calendar</span>
+              </a>
             </li>
-            <li class="header__nav-item">
-              <ion-icon class="header__nav-icon" name="chatbubbles"></ion-icon>
-              <span class="header__nav-text">Messages</span>
+            <li>
+              <a href="#" class="header__nav-item">
+                <ion-icon
+                  class="header__nav-icon"
+                  name="chatbubbles"
+                ></ion-icon>
+                <span class="header__nav-text">Messages</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -44,9 +55,9 @@
               alt="Perceval"
             />
           </a>
-          <div class="header__tools-icon">
+          <a href="#" class="header__tools-icon">
             <ion-icon name="settings-sharp"></ion-icon>
-          </div>
+          </a>
           <div class="header__tools-icon header__menu-icon">
             <ion-icon name="menu"></ion-icon>
           </div>
@@ -163,16 +174,16 @@
             />
           </a>
           <div class="user__infos">
-            <span class="user__name">Kate Liss</span>
+            <a href="#" class="user__name">Kate Liss</a>
             <span class="user__position">Freelancer</span>
           </div>
-          <div class="notification">
+          <a href="#" class="notification">
             <ion-icon
               class="notification__icon"
               name="notifications"
             ></ion-icon>
             <span class="notification__number">3</span>
-          </div>
+          </a>
         </header>
         <section class="sidebar__section">
           <div class="searchbar">
@@ -191,236 +202,292 @@
             <h3 class="sidebar__title">My tasks</h3>
             <ul class="taskcard__container">
               <!-- CARD -->
-              <li class="taskcard">
-                <header class="taskcard__header">
-                  <span
-                    class="taskcard__colortag taskcard__colortag--purple"
-                  ></span>
-                  <h4 class="taskcard__title">Create Homepage</h4>
-                </header>
-                <div class="taskcard__content">
-                  It is necessary to draw logos for the network of bakeries.
-                  Focus on organic texture.
-                </div>
-                <div class="taskcard__infos">
-                  <div class="taskcard__priority">
-                    <ion-icon
-                      class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                      name="flame"
-                    ></ion-icon>
-                    <span>High Priority</span>
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--purple"
+                    ></span>
+                    <h4 class="taskcard__title">Create Homepage</h4>
+                  </header>
+                  <div class="taskcard__content"></div>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--high-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>High Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-4">4 Apr, 2020</time>
+                    </div>
                   </div>
-                  <div class="taskcard__deadline">
-                    <ion-icon
-                      class="taskcard__infos-icon"
-                      name="stopwatch"
-                    ></ion-icon>
-                    <time datetime="2020-4-4">4 Apr, 2020</time>
-                  </div>
-                </div>
+                </a>
               </li>
               <!-- CARD -->
-              <li class="taskcard">
-                <header class="taskcard__header">
-                  <span
-                    class="taskcard__colortag taskcard__colortag--purple"
-                  ></span>
-                  <h4 class="taskcard__title">Create Homepage</h4>
-                </header>
-                <div class="taskcard__content">
-                  It is necessary to draw logos for the network of bakeries.
-                  Focus on organic texture.
-                </div>
-                <div class="taskcard__infos">
-                  <div class="taskcard__priority">
-                    <ion-icon
-                      class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                      name="flame"
-                    ></ion-icon>
-                    <span>High Priority</span>
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--cyan"
+                    ></span>
+                    <h4 class="taskcard__title">Create Illustration</h4>
+                  </header>
+                  <div class="taskcard__content"></div>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--high-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>High Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-4">4 Apr, 2020</time>
+                    </div>
                   </div>
-                  <div class="taskcard__deadline">
-                    <ion-icon
-                      class="taskcard__infos-icon"
-                      name="stopwatch"
-                    ></ion-icon>
-                    <time datetime="2020-4-4">4 Apr, 2020</time>
-                  </div>
-                </div>
+                </a>
               </li>
               <!-- CARD -->
-              <li class="taskcard">
-                <header class="taskcard__header">
-                  <span
-                    class="taskcard__colortag taskcard__colortag--purple"
-                  ></span>
-                  <h4 class="taskcard__title">Create Homepage</h4>
-                </header>
-                <div class="taskcard__content">
-                  It is necessary to draw logos for the network of bakeries.
-                  Focus on organic texture.
-                </div>
-                <div class="taskcard__infos">
-                  <div class="taskcard__priority">
-                    <ion-icon
-                      class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                      name="flame"
-                    ></ion-icon>
-                    <span>High Priority</span>
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--cyan"
+                    ></span>
+                    <h4 class="taskcard__title">Draw logo's concepts</h4>
+                  </header>
+                  <div class="taskcard__content">
+                    It is necessary to draw logos for the network of bakeries.
+                    Focus on organic texture.
                   </div>
-                  <div class="taskcard__deadline">
-                    <ion-icon
-                      class="taskcard__infos-icon"
-                      name="stopwatch"
-                    ></ion-icon>
-                    <time datetime="2020-4-4">4 Apr, 2020</time>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--middle-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>Middle Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-14">14 Apr, 2020</time>
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
               <!-- CARD -->
-              <li class="taskcard">
-                <header class="taskcard__header">
-                  <span
-                    class="taskcard__colortag taskcard__colortag--purple"
-                  ></span>
-                  <h4 class="taskcard__title">Create Homepage</h4>
-                </header>
-                <div class="taskcard__content">
-                  It is necessary to draw logos for the network of bakeries.
-                  Focus on organic texture.
-                </div>
-                <div class="taskcard__infos">
-                  <div class="taskcard__priority">
-                    <ion-icon
-                      class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                      name="flame"
-                    ></ion-icon>
-                    <span>High Priority</span>
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--yellow"
+                    ></span>
+                    <h4 class="taskcard__title">Competitor Analysis</h4>
+                  </header>
+                  <div class="taskcard__content"></div>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--low-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>Low Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-14">14 Apr, 2020</time>
+                    </div>
                   </div>
-                  <div class="taskcard__deadline">
-                    <ion-icon
-                      class="taskcard__infos-icon"
-                      name="stopwatch"
-                    ></ion-icon>
-                    <time datetime="2020-4-4">4 Apr, 2020</time>
-                  </div>
-                </div>
+                </a>
               </li>
               <!-- CARD -->
-              <li class="taskcard">
-                <header class="taskcard__header">
-                  <span
-                    class="taskcard__colortag taskcard__colortag--purple"
-                  ></span>
-                  <h4 class="taskcard__title">Create Homepage</h4>
-                </header>
-                <div class="taskcard__content">
-                  It is necessary to draw logos for the network of bakeries.
-                  Focus on organic texture.
-                </div>
-                <div class="taskcard__infos">
-                  <div class="taskcard__priority">
-                    <ion-icon
-                      class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                      name="flame"
-                    ></ion-icon>
-                    <span>High Priority</span>
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--yellow"
+                    ></span>
+                    <h4 class="taskcard__title">Concept of Homepage</h4>
+                  </header>
+                  <div class="taskcard__content"></div>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="flame"
+                      ></ion-icon>
+                      <span>No Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-14">14 Apr, 2020</time>
+                    </div>
                   </div>
-                  <div class="taskcard__deadline">
-                    <ion-icon
-                      class="taskcard__infos-icon"
-                      name="stopwatch"
-                    ></ion-icon>
-                    <time datetime="2020-4-4">4 Apr, 2020</time>
-                  </div>
-                </div>
+                </a>
               </li>
               <!-- CARD -->
-              <li class="taskcard">
-                <header class="taskcard__header">
-                  <span
-                    class="taskcard__colortag taskcard__colortag--purple"
-                  ></span>
-                  <h4 class="taskcard__title">Create Homepage</h4>
-                </header>
-                <div class="taskcard__content">
-                  It is necessary to draw logos for the network of bakeries.
-                  Focus on organic texture.
-                </div>
-                <div class="taskcard__infos">
-                  <div class="taskcard__priority">
-                    <ion-icon
-                      class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                      name="flame"
-                    ></ion-icon>
-                    <span>High Priority</span>
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--purple"
+                    ></span>
+                    <h4 class="taskcard__title">Make Moodboard</h4>
+                  </header>
+                  <div class="taskcard__content">
+                    Show different illustrations and styles for a mobile
+                    application
                   </div>
-                  <div class="taskcard__deadline">
-                    <ion-icon
-                      class="taskcard__infos-icon"
-                      name="stopwatch"
-                    ></ion-icon>
-                    <time datetime="2020-4-4">4 Apr, 2020</time>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--middle-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>Middle Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-14">14 Apr, 2020</time>
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
               <!-- CARD -->
-              <li class="taskcard">
-                <header class="taskcard__header">
-                  <span
-                    class="taskcard__colortag taskcard__colortag--purple"
-                  ></span>
-                  <h4 class="taskcard__title">Create Homepage</h4>
-                </header>
-                <div class="taskcard__content">
-                  It is necessary to draw logos for the network of bakeries.
-                  Focus on organic texture.
-                </div>
-                <div class="taskcard__infos">
-                  <div class="taskcard__priority">
-                    <ion-icon
-                      class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                      name="flame"
-                    ></ion-icon>
-                    <span>High Priority</span>
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--purple"
+                    ></span>
+                    <h4 class="taskcard__title">New Wireframe</h4>
+                  </header>
+                  <div class="taskcard__content">
+                    Obcaecati velit reprehenderit messi voluptatum illum.
                   </div>
-                  <div class="taskcard__deadline">
-                    <ion-icon
-                      class="taskcard__infos-icon"
-                      name="stopwatch"
-                    ></ion-icon>
-                    <time datetime="2020-4-4">4 Apr, 2020</time>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--low-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>Low Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-14">14 Apr, 2020</time>
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
               <!-- CARD -->
-              <li class="taskcard">
-                <header class="taskcard__header">
-                  <span
-                    class="taskcard__colortag taskcard__colortag--purple"
-                  ></span>
-                  <h4 class="taskcard__title">Create Homepage</h4>
-                </header>
-                <div class="taskcard__content">
-                  It is necessary to draw logos for the network of bakeries.
-                  Focus on organic texture.
-                </div>
-                <div class="taskcard__infos">
-                  <div class="taskcard__priority">
-                    <ion-icon
-                      class="taskcard__infos-icon taskcard__infos-icon--high-priority"
-                      name="flame"
-                    ></ion-icon>
-                    <span>High Priority</span>
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--purple"
+                    ></span>
+                    <h4 class="taskcard__title">Prepare business meeting</h4>
+                  </header>
+                  <div class="taskcard__content"></div>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--low-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>Low Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-14">14 Apr, 2020</time>
+                    </div>
                   </div>
-                  <div class="taskcard__deadline">
-                    <ion-icon
-                      class="taskcard__infos-icon"
-                      name="stopwatch"
-                    ></ion-icon>
-                    <time datetime="2020-4-4">4 Apr, 2020</time>
+                </a>
+              </li>
+              <!-- CARD -->
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--cyan"
+                    ></span>
+                    <h4 class="taskcard__title">Get rid of Bootstrap</h4>
+                  </header>
+                  <div class="taskcard__content"></div>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--high-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>High Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-24">24 Apr, 2020</time>
+                    </div>
                   </div>
-                </div>
+                </a>
+              </li>
+              <!-- CARD -->
+              <li>
+                <a href="#" class="taskcard">
+                  <header class="taskcard__header">
+                    <span
+                      class="taskcard__colortag taskcard__colortag--yellow"
+                    ></span>
+                    <h4 class="taskcard__title">Make a cup of tea</h4>
+                  </header>
+                  <div class="taskcard__content">Magnam voluptatum cumque?</div>
+                  <div class="taskcard__infos">
+                    <div class="taskcard__priority">
+                      <ion-icon
+                        class="taskcard__infos-icon taskcard__infos-icon--low-priority"
+                        name="flame"
+                      ></ion-icon>
+                      <span>Low Priority</span>
+                    </div>
+                    <div class="taskcard__deadline">
+                      <ion-icon
+                        class="taskcard__infos-icon"
+                        name="stopwatch"
+                      ></ion-icon>
+                      <time datetime="2020-4-24">24 Apr, 2020</time>
+                    </div>
+                  </div>
+                </a>
               </li>
             </ul>
           </div>

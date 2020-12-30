@@ -1,4 +1,6 @@
 .taskcard {
+  display: inline-block;
+  width: 100%;
   padding: 20px 15px;
   /*background-color: #fff;
   border: 1px solid silver;*/
