@@ -8,6 +8,11 @@
     width: 65px;
     object-fit: cover;
     border-radius: 50%;
+
+    &--small {
+      max-height: 35px;
+      max-width: 35px;
+    }
   }
 
   &__infos {

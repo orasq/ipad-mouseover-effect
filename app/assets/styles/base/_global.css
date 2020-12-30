@@ -3,9 +3,11 @@ html {
 }
 
 body {
-  display: grid;
-  place-content: center;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
   font-family: $nunito;
   color: #333;
   background-color: $bg_blue;

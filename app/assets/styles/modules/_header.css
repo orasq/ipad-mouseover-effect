@@ -1,35 +1,70 @@
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: $bg_grey;
-  border-right: 2px solid $line_light_grey;
+  border-bottom: 2px solid $line_light_grey;
+
+  @mixin l_screen {
+    flex-direction: column;
+    border-bottom: none;
+    border-right: 2px solid $line_light_grey;
+  }
 
   &__logo,
-  &__settings {
-    padding: 40px;
+  &__tools {
+    padding: 6px 15px;
+
+    @mixin s_screen {
+      padding: 10px 20px;
+    }
+
+    @mixin l_screen {
+      padding: 40px;
+    }
   }
 
   &__logo {
-    font-size: 3rem;
+    font-size: 2rem;
+
+    @mixin l_screen {
+      font-size: 3rem;
+    }
   }
 
   &__nav {
     flex: 1;
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
 
   &__nav-list {
-    display: flex;
-    flex-direction: column;
+    display: none;
+    flex-direction: row;
     align-items: flex-start;
     margin: 0 30px;
 
+    @mixin s_screen {
+      display: flex;
+    }
+
+    @mixin l_screen {
+      flex-direction: column;
+    }
+
     & > * + * {
-      margin-top: 30px;
+      margin: 0 0 0 5vw;
+
+      @mixin m_screen {
+        margin: 0 0 0 2vw;
+      }
+
+      @mixin l_screen {
+        margin: 30px 0 0 0;
+      }
     }
   }
 
@@ -59,24 +94,86 @@
 
   &__nav-icon {
     font-size: 1.3rem;
+
+    @mixin m_screen {
+      font-size: 1rem;
+    }
+
+    @mixin l_screen {
+      font-size: 1.3rem;
+    }
   }
 
   &__nav-text {
-    margin-left: 10px;
-    font-size: 1.1rem;
+    display: none;
+    margin-left: 8px;
+    font-size: 1rem;
     font-weight: 400;
+
+    @mixin m_screen {
+      display: block;
+    }
+
+    @mixin l_screen {
+      margin-left: 10px;
+      font-size: 1.1rem;
+    }
   }
 
-  &__settings-icon {
-    display: flex; /* to avoid unwanted icon's padding */
+  &__tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > * + * {
+      @mixin s_screen {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__tools-icon {
+    display: none;
+    align-items: center;
     padding: $hover_padding;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: $text_medium_grey;
     border-radius: $radius_hover;
+
+    @mixin s_screen {
+      display: flex; /* to avoid unwanted icon's padding */
+    }
+
+    @mixin l_screen {
+      font-size: 1.6rem;
+    }
 
     &--is-active {
       background-color: #fff;
       box-shadow: 0px 10px 20px 0px #dedede;
+    }
+  }
+
+  &__avatar-icon {
+    display: none;
+    align-items: center;
+
+    @mixin s_screen {
+      display: flex; /* to avoid unwanted icon's padding */
+    }
+
+    @mixin xl_screen {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    display: flex;
+    padding: 5px;
+    font-size: 2rem;
+
+    @mixin s_screen {
+      display: none;
     }
   }
 }
