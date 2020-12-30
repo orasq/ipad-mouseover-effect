@@ -26,7 +26,11 @@
   }
 
   &__logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    @mixin s_screen {
+      font-size: 2rem;
+    }
 
     @mixin l_screen {
       font-size: 3rem;
