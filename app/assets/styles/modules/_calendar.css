@@ -92,6 +92,11 @@
     @mixin s_screen {
       gap: 15px;
     }
+
+    li {
+      list-style: none;
+      counter-increment: days;
+    }
   }
 
   &__day {
@@ -99,18 +104,18 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    height: 100%;
+    width: 100%;
 
     padding: 5px;
-    padding-top: 30px;
+    padding-top: 40px;
     border-bottom: 1px solid $line_light_grey;
     border-right: 1px solid $line_light_grey;
     background-color: $surface_grey;
-    list-style: none;
-    counter-increment: days;
 
     @mixin s_screen {
       padding: 10px;
-      padding-top: 30px;
+      padding-top: 40px;
       border: none;
       border-radius: $radius_medium;
     }
