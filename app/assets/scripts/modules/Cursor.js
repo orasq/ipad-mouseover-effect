@@ -8,6 +8,7 @@ const Cursor = () => {
   let isLinkHover = false;
   let isTextInputHover = false;
   let isScrolling = false;
+  let currentHoveredLink;
   // init link's infos to use in multiple functions
   let linkInfo = {
     linkWidth: 0,
@@ -45,11 +46,11 @@ const Cursor = () => {
     }
   };
 
-  const getLinkInfo = () => {
+  const getLinkInfo = (el) => {
     // get size & position of hovered element
-    let link = e.target.getBoundingClientRect();
+    let link = el.getBoundingClientRect();
     // get border-radius of hovered element and give same value to cursor
-    let linkStyles = getComputedStyle(e.target);
+    let linkStyles = getComputedStyle(el);
     // different values to style cursor on hover
     if (!isScrolling) {
       linkInfo.linkWidth = link.width;
@@ -61,18 +62,8 @@ const Cursor = () => {
   };
 
   const linkHover = (e) => {
-    // get size & position of hovered element
-    let link = e.target.getBoundingClientRect();
-    // get border-radius of hovered element and give same value to cursor
-    let linkStyles = getComputedStyle(e.target);
-    // different values to style cursor on hover
-    if (!isScrolling) {
-      linkInfo.linkWidth = link.width;
-      linkInfo.linkHeight = link.height;
-      linkInfo.linkTop = link.top;
-      linkInfo.linkLeft = link.left;
-      linkInfo.borderRadius = linkStyles.borderRadius;
-    }
+    currentHoveredLink = e.target;
+    getLinkInfo(e.target);
 
     // do not scale & freeze cursor if hovering text input
     if (e.target.nodeName == "INPUT") {
@@ -124,10 +115,11 @@ const Cursor = () => {
   };
 
   const translateHoveredElement = (e) => {
+    getLinkInfo(currentHoveredLink);
     // get task list scrolling position
     let scrollPosition = e.target.scrollTop;
     // ... and remove this value to the cursor position
-    let yPosition = linkInfo.linkTop + linkInfo.linkHeight / 2 - scrollPosition;
+    let yPosition = linkInfo.linkTop + linkInfo.linkHeight / 2;
 
     gsap.to(cursor, {
       duration: 0,
