@@ -5,8 +5,13 @@ const Cursor = () => {
   const cursor = document.querySelector(".cursor");
   const links = document.querySelectorAll("[data-hover]");
   let isHover = false;
+  let textInputHover = false;
 
   const followMouse = (e) => {
+    let cursorHeight = textInputHover ? 23 : 25;
+    let cursorWidth = textInputHover ? 2 : 25;
+    let cursorOpacity = textInputHover ? 0.25 : 0.15;
+    let cursorRadius = textInputHover ? 0 : "50%";
     // disable mouse following if hovering a link
     if (!isHover) {
       // check coordinates of mouse
@@ -15,10 +20,10 @@ const Cursor = () => {
         duration: 0.2,
         x: e.pageX,
         y: e.pageY,
-        height: 25,
-        width: 25,
-        opacity: 0.15,
-        borderRadius: "50%",
+        height: cursorHeight,
+        width: cursorWidth,
+        opacity: cursorOpacity,
+        borderRadius: cursorRadius,
       });
     }
 
@@ -36,21 +41,27 @@ const Cursor = () => {
   };
 
   const linkHover = (e) => {
-    isHover = true;
     // get size & position of hovered element
     let link = e.target.getBoundingClientRect();
     // to get border-radius of hovered element and give same value to cursor
     let linkStyles = getComputedStyle(e.target);
     // different values to style cursor on hover
-    let linkInfo = {
-      linkHeight: link.height,
-      linkWidth: link.width,
-      linkTop: link.top,
-      linkLeft: link.left,
-      borderRadius: linkStyles.borderRadius,
-    };
-    // change cursor size with hovered link values
-    changeCursorSize(linkInfo);
+
+    let linkInfo = {};
+
+    if (e.target.nodeName == "INPUT") {
+      textInputHover = true;
+      isHover = false;
+    } else {
+      isHover = true;
+      linkInfo.linkWidth = link.width;
+      linkInfo.linkHeight = link.height;
+      linkInfo.linkTop = link.top;
+      linkInfo.linkLeft = link.left;
+      linkInfo.borderRadius = linkStyles.borderRadius;
+      // change cursor size with hovered link values
+      changeCursorSize(linkInfo);
+    }
   };
 
   const changeCursorSize = (link) => {
@@ -68,7 +79,7 @@ const Cursor = () => {
         height: link.linkHeight,
         width: link.linkWidth,
         borderRadius: link.borderRadius,
-        opacity: 0.07,
+        opacity: 0.05,
         ease: "power4.out",
       });
     }
@@ -87,6 +98,7 @@ const Cursor = () => {
 
   const releaseCursor = (e) => {
     isHover = false;
+    textInputHover = false;
     // when mouse leave link, remove all the inline styles
     gsap.to(cursor, {
       duration: 0.1,
