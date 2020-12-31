@@ -4,20 +4,37 @@ import { throttle } from "lodash";
 const Cursor = () => {
   const cursor = document.querySelector(".cursor");
   const links = document.querySelectorAll("[data-hover]");
-  let isHover = false;
-  let textInputHover = false;
+  const taskList = document.querySelector(".taskcard__container");
+  let isLinkHover = false;
+  let isTextInputHover = false;
+  let isScrolling = false;
+  // init link's infos to use in multiple functions
+  let linkInfo = {
+    linkWidth: 0,
+    linkHeight: 0,
+    linkTop: 0,
+    linkLeft: 0,
+    borderRadius: 0,
+  };
 
   const followMouse = (e) => {
-    let cursorHeight = textInputHover ? 23 : 25;
-    let cursorWidth = textInputHover ? 2 : 25;
-    let cursorOpacity = textInputHover ? 0.25 : 0.15;
-    let cursorRadius = textInputHover ? 0 : "50%";
-    // disable mouse following if hovering a link
-    if (!isHover) {
+    // values change if hovering a text input
+    let cursorHeight = isTextInputHover ? 23 : 25;
+    let cursorWidth = isTextInputHover ? 2 : 25;
+    let cursorOpacity = isTextInputHover ? 0.25 : 0.15;
+    let cursorRadius = isTextInputHover ? 0 : "50%";
+    // if mouse come back to viewport after having left it
+    // disable anim duration to avoid cursor to 'run'
+    // from viewport leaving point to entering point
+    let transitionDuration = cursor.style.visibility == "hidden" ? 0 : 0.2;
+    // make the cursor visible again
+    cursor.style.visibility = "visible";
+    // disable mouse follow if hovering a link
+    if (!isLinkHover) {
       // check coordinates of mouse
       // and apply to cursor element 'top' and 'left' properties
       gsap.to(cursor, {
-        duration: 0.2,
+        duration: transitionDuration,
         x: e.pageX,
         y: e.pageY,
         height: cursorHeight,
@@ -26,52 +43,55 @@ const Cursor = () => {
         borderRadius: cursorRadius,
       });
     }
+  };
 
-    // If mouse leave viewport :::: work in progress
-    if (
-      e.clientY <= 0 ||
-      e.clientX <= 0 ||
-      e.clientX >= window.innerWidth ||
-      e.clientY >= window.innerHeight
-    ) {
-      cursor.style.visibility = "hidden";
-    } else {
-      cursor.style.visibility = "visible";
+  const getLinkInfo = () => {
+    // get size & position of hovered element
+    let link = e.target.getBoundingClientRect();
+    // get border-radius of hovered element and give same value to cursor
+    let linkStyles = getComputedStyle(e.target);
+    // different values to style cursor on hover
+    if (!isScrolling) {
+      linkInfo.linkWidth = link.width;
+      linkInfo.linkHeight = link.height;
+      linkInfo.linkTop = link.top;
+      linkInfo.linkLeft = link.left;
+      linkInfo.borderRadius = linkStyles.borderRadius;
     }
   };
 
   const linkHover = (e) => {
     // get size & position of hovered element
     let link = e.target.getBoundingClientRect();
-    // to get border-radius of hovered element and give same value to cursor
+    // get border-radius of hovered element and give same value to cursor
     let linkStyles = getComputedStyle(e.target);
     // different values to style cursor on hover
-
-    let linkInfo = {};
-
-    if (e.target.nodeName == "INPUT") {
-      textInputHover = true;
-      isHover = false;
-    } else {
-      isHover = true;
+    if (!isScrolling) {
       linkInfo.linkWidth = link.width;
       linkInfo.linkHeight = link.height;
       linkInfo.linkTop = link.top;
       linkInfo.linkLeft = link.left;
       linkInfo.borderRadius = linkStyles.borderRadius;
+    }
+
+    // do not scale & freeze cursor if hovering text input
+    if (e.target.nodeName == "INPUT") {
+      isTextInputHover = true;
+      isLinkHover = false;
+    } else {
+      isLinkHover = true;
       // change cursor size with hovered link values
       changeCursorSize(linkInfo);
     }
   };
 
   const changeCursorSize = (link) => {
-    // change position
-    // cursor.style.top = `${link.linkTop}px`;
-    // cursor.style.left = `${link.linkLeft}px`;
+    // gsap put the 'transform-origin' to 'center
+    // need to add half the size of the element to the position values
     let yPosition = link.linkTop + link.linkHeight / 2;
     let xPosition = link.linkLeft + link.linkWidth / 2;
-
-    if (isHover) {
+    // if
+    if (isLinkHover) {
       gsap.to(cursor, {
         duration: 0.25,
         x: xPosition,
@@ -83,42 +103,59 @@ const Cursor = () => {
         ease: "power4.out",
       });
     }
-    // change size
-    // cursor.style.height = `${link.linkHeight}px`;
-    // cursor.style.width = `${link.linkWidth}px`;
-    // change border-radius
-    // cursor.style.borderRadius = link.borderRadius;
-    // overwriting computed styles to avoid shift
-    // cursor.style.transform = "translate(0, 0)";
-    // cursor lighter when hovering a link for readability purposes
-    // cursor.style.opacity = "0.07";
-    // apply transition duration with JS to disable transitions on mouse leave
-    // cursor.style.transitionDuration = "0.2s";
   };
 
   const releaseCursor = (e) => {
-    isHover = false;
-    textInputHover = false;
-    // when mouse leave link, remove all the inline styles
-    gsap.to(cursor, {
-      duration: 0.1,
-      height: 30,
-      width: 30,
-      borderRadius: "50%",
-    });
+    isLinkHover = false;
+    isTextInputHover = false;
   };
 
-  const followMouseHandler = throttle(followMouse, 10);
+  const hideCursor = (e) => {
+    // If mouse leave viewport
+    if (
+      e.clientY <= 0 ||
+      e.clientX <= 0 ||
+      e.clientX >= window.innerWidth ||
+      e.clientY >= window.innerHeight
+    ) {
+      // hide cursor
+      cursor.style.visibility = "hidden";
+    }
+  };
 
-  // mouse event listener
+  const translateHoveredElement = (e) => {
+    // get task list scrolling position
+    let scrollPosition = e.target.scrollTop;
+    // ... and remove this value to the cursor position
+    let yPosition = linkInfo.linkTop + linkInfo.linkHeight / 2 - scrollPosition;
+
+    gsap.to(cursor, {
+      duration: 0,
+      y: yPosition,
+    });
+    // console.table(
+    //   "scroll top:" + e.target.scrollTop,
+    //   ", Yposition" + linkInfo.linkTop,
+    //   ", New YPosition:" + yPosition,
+    //   linkInfo
+    // );
+  };
+
+  // Event Listener - mouse moving
+  const followMouseHandler = throttle(followMouse, 10); // throttle event a minimum without affecting smoothness
   document.addEventListener("mousemove", followMouseHandler);
-  // hover event listener
+  // Event Listener - mouse leave viewport
+  document.addEventListener("mouseleave", hideCursor);
+  // Event Listener - mouse hover link
   links.forEach((link) => {
     link.addEventListener("mouseenter", linkHover);
   });
+  // Event Listener - mouse leave link
   links.forEach((link) => {
     link.addEventListener("mouseleave", releaseCursor);
   });
+  // Event Listener - scroll task list
+  taskList.addEventListener("scroll", translateHoveredElement);
 };
 
 export default Cursor;

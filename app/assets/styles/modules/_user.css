@@ -9,6 +9,16 @@
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
+    transition: filter $anim_fast ease-out;
+
+    &:hover {
+      filter: brightness(0.5);
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
 
     &--small {
       max-height: 35px;

@@ -9,4 +9,12 @@
   background-color: $purple;
   border: none;
   border-radius: $radius_small;
+
+  transition: $anim_fast ease-out;
+  transition-property: background-color, color;
+
+  &:hover {
+    background-color: #fff;
+    color: $text_dark_grey;
+  }
 }
