@@ -1,4 +1,3 @@
-import gsap from "gsap";
 import { throttle } from "lodash";
 
 const Cursor = () => {
@@ -11,15 +10,7 @@ const Cursor = () => {
     if (!isHover) {
       // check coordinates of mouse
       // and apply to cursor element 'top' and 'left' properties
-      gsap.to(cursor, {
-        duration: 0.2,
-        x: e.pageX,
-        y: e.pageY,
-        height: 25,
-        width: 25,
-        opacity: 0.15,
-        borderRadius: "50%",
-      });
+      cursor.style.transform = `translate(${e.pageX}px, ${e.pageY}px)`;
     }
 
     // If mouse leave viewport :::: work in progress
@@ -55,45 +46,25 @@ const Cursor = () => {
 
   const changeCursorSize = (link) => {
     // change position
-    // cursor.style.top = `${link.linkTop}px`;
-    // cursor.style.left = `${link.linkLeft}px`;
-    let yPosition = link.linkTop + link.linkHeight / 2;
-    let xPosition = link.linkLeft + link.linkWidth / 2;
-
-    if (isHover) {
-      gsap.to(cursor, {
-        duration: 0.25,
-        x: xPosition,
-        y: yPosition,
-        height: link.linkHeight,
-        width: link.linkWidth,
-        borderRadius: link.borderRadius,
-        opacity: 0.07,
-        ease: "power4.out",
-      });
-    }
+    cursor.style.top = `${link.linkTop}px`;
+    cursor.style.left = `${link.linkLeft}px`;
     // change size
-    // cursor.style.height = `${link.linkHeight}px`;
-    // cursor.style.width = `${link.linkWidth}px`;
+    cursor.style.height = `${link.linkHeight}px`;
+    cursor.style.width = `${link.linkWidth}px`;
     // change border-radius
-    // cursor.style.borderRadius = link.borderRadius;
+    cursor.style.borderRadius = link.borderRadius;
     // overwriting computed styles to avoid shift
-    // cursor.style.transform = "translate(0, 0)";
+    cursor.style.transform = "translate(0, 0)";
     // cursor lighter when hovering a link for readability purposes
-    // cursor.style.opacity = "0.07";
+    cursor.style.opacity = "0.07";
     // apply transition duration with JS to disable transitions on mouse leave
-    // cursor.style.transitionDuration = "0.2s";
+    cursor.style.transitionDuration = "0.2s";
   };
 
   const releaseCursor = (e) => {
     isHover = false;
     // when mouse leave link, remove all the inline styles
-    gsap.to(cursor, {
-      duration: 0.1,
-      height: 30,
-      width: 30,
-      borderRadius: "50%",
-    });
+    cursor.removeAttribute("style");
   };
 
   const followMouseHandler = throttle(followMouse, 10);

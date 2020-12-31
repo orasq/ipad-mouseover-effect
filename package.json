@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
+    "gsap": "^3.5.1",
     "lazysizes": "^5.2.2",
     "lodash": "^4.17.20",
     "normalize.css": "^8.0.1"
