@@ -60,8 +60,8 @@ const Cursor = () => {
     if (!isScrolling) {
       linkInfo.linkWidth = link.width;
       linkInfo.linkHeight = link.height;
-      linkInfo.linkTop = link.top;
-      linkInfo.linkLeft = link.left;
+      linkInfo.linkTop = link.top + window.scrollY; // to take scrolling shift into account
+      linkInfo.linkLeft = link.left + window.scrollX; // to take scrolling shift into account
       linkInfo.borderRadius = linkStyles.borderTopLeftRadius;
     }
   };
