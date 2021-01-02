@@ -1,0 +1,1342 @@
+/* VENDORS */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+/* BASE */
+/* COLORS */
+/* FONTS */
+/* BORDER-RADIUS */
+:root {
+  --radius_big: 15px;
+}
+@media (min-width: 768px) {
+:root {
+    --radius_big: 30px
+}
+  }
+/* PADDINGS */
+/* ANIMATION */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  cursor: none;
+}
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  background-color: #edf8ff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 1.3rem;
+  color: #262f56;
+}
+@media (min-width: 576px) {
+h1 {
+    font-size: 2rem
+}
+  }
+@media (min-width: 992px) {
+h1 {
+    font-size: 2.2rem
+}
+  }
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: none;
+}
+button,
+input {
+  cursor: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+/* FONTS */
+/* nunito-200 - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./assets/fonts/nunito/nunito-v16-latin-200.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/nunito/nunito-v16-latin-200.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-200.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-200.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-200.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-200.svg#Nunito")
+      format("svg"); /* Legacy iOS */
+}
+/* nunito-300 - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/nunito/nunito-v16-latin-300.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/nunito/nunito-v16-latin-300.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-300.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-300.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-300.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-300.svg#Nunito")
+      format("svg"); /* Legacy iOS */
+}
+/* nunito-regular - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/nunito/nunito-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/nunito/nunito-v16-latin-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-regular.svg#Nunito")
+      format("svg"); /* Legacy iOS */
+}
+/* nunito-600 - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/nunito/nunito-v16-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/nunito/nunito-v16-latin-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-600.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-600.svg#Nunito")
+      format("svg"); /* Legacy iOS */
+}
+/* nunito-700 - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/nunito/nunito-v16-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/nunito/nunito-v16-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-700.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-700.svg#Nunito")
+      format("svg"); /* Legacy iOS */
+}
+/* nunito-800 - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./assets/fonts/nunito/nunito-v16-latin-800.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/nunito/nunito-v16-latin-800.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-800.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-800.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-800.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-800.svg#Nunito")
+      format("svg"); /* Legacy iOS */
+}
+/* nunito-900 - latin */
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/nunito/nunito-v16-latin-900.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./assets/fonts/nunito/nunito-v16-latin-900.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/nunito/nunito-v16-latin-900.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./assets/fonts/nunito/nunito-v16-latin-900.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./assets/fonts/nunito/nunito-v16-latin-900.svg#Nunito")
+      format("svg"); /* Legacy iOS */
+}
+/* MODULES */
+.main-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  max-width: 1475px;
+
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0px 15px 35px 0px #d1e0e9;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+.main-wrapper {
+    height: 100vh;
+    max-height: 985px;
+    border-radius: 50px;
+    flex-direction: row
+}
+  }
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfe;
+  border-bottom: 2px solid #efefef;
+}
+@media (min-width: 992px) {
+.header {
+    flex-direction: column;
+    border-bottom: none;
+    border-right: 2px solid #efefef
+}
+  }
+.header__logo,
+  .header__tools {
+    padding: 6px 15px;
+  }
+@media (min-width: 576px) {
+
+  .header__logo,
+  .header__tools {
+      padding: 10px 20px
+  }
+  }
+@media (min-width: 992px) {
+
+  .header__logo,
+  .header__tools {
+      padding: 40px
+  }
+  }
+.header__logo {
+    font-size: 1.5rem;
+  }
+@media (min-width: 576px) {
+
+  .header__logo {
+      font-size: 2rem
+  }
+  }
+@media (min-width: 992px) {
+
+  .header__logo {
+      font-size: 3rem
+  }
+  }
+.header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+.header__nav a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      color: #afb3c3;
+    }
+.header__nav-list {
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 30px;
+    list-style: none;
+    color: #afb3c3;
+  }
+@media (min-width: 576px) {
+
+  .header__nav-list {
+      display: flex
+  }
+  }
+@media (min-width: 992px) {
+
+  .header__nav-list {
+      flex-direction: column
+  }
+  }
+.header__nav-list > * + * {
+      margin: 0 0 0 5vw;
+    }
+@media (min-width: 768px) {
+
+    .header__nav-list > * + * {
+        margin: 0 0 0 2vw
+    }
+  }
+@media (min-width: 992px) {
+
+    .header__nav-list > * + * {
+        margin: 30px 0 0 0
+    }
+  }
+.header__nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px calc(7px * 2);
+    border-radius: 8px;
+
+    /*&--is-active {
+      background-color: #fff;
+      box-shadow: 0px 10px 20px 0px #dedede;
+    }*/
+  }
+.header__nav-item--is-active .header__nav-icon {
+    color: #9d63e2;
+  }
+.header__nav-item--is-active .header__nav-text {
+    font-weight: 600;
+    color: #9d63e2;
+  }
+.header__nav-icon {
+    font-size: 1.3rem;
+  }
+@media (min-width: 768px) {
+
+  .header__nav-icon {
+      font-size: 1rem
+  }
+  }
+@media (min-width: 992px) {
+
+  .header__nav-icon {
+      font-size: 1.3rem
+  }
+  }
+.header__nav-text {
+    display: none;
+    margin-left: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+@media (min-width: 768px) {
+
+  .header__nav-text {
+      display: block
+  }
+  }
+@media (min-width: 992px) {
+
+  .header__nav-text {
+      margin-left: 10px;
+      font-size: 1.1rem
+  }
+  }
+.header__tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+@media (min-width: 576px) {
+
+    .header__tools > * + * {
+        margin-left: 10px
+    }
+  }
+.header__tools-icon {
+    display: none;
+    align-items: center;
+    padding: 7px;
+    font-size: 1.3rem;
+    color: #afb3c3;
+    border-radius: 8px;
+  }
+@media (min-width: 576px) {
+
+  .header__tools-icon {
+      display: flex /* to avoid unwanted icon's padding */
+  }
+  }
+@media (min-width: 992px) {
+
+  .header__tools-icon {
+      font-size: 1.6rem
+  }
+  }
+.header__tools-icon--is-active {
+      background-color: #fff;
+      box-shadow: 0px 10px 20px 0px #dedede;
+    }
+.header__avatar-icon {
+    display: none;
+    align-items: center;
+  }
+@media (min-width: 576px) {
+
+  .header__avatar-icon {
+      display: flex /* to avoid unwanted icon's padding */
+  }
+  }
+@media (min-width: 1300px) {
+
+  .header__avatar-icon {
+      display: none
+  }
+  }
+.header__menu-icon {
+    display: flex;
+    padding: 5px;
+    font-size: 2rem;
+  }
+@media (min-width: 576px) {
+
+  .header__menu-icon {
+      display: none
+  }
+  }
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+@media (min-width: 768px) {
+.content {
+    padding: 25px
+}
+  }
+@media (min-width: 992px) {
+.content {
+    padding: 45px
+}
+  }
+.content > * + * {
+    margin-top: 10px;
+  }
+@media (min-width: 576px) {
+
+  .content > * + * {
+      margin-top: 20px
+  }
+  }
+@media (min-width: 992px) {
+
+  .content > * + * {
+      margin-top: 30px
+  }
+  }
+.content__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+@media (min-width: 992px) {
+
+  .content__header {
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: stretch
+  }
+  }
+.sidebar {
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 390px;
+  padding: 35px;
+  background: linear-gradient(to top, #f2f2f7, #fff);
+}
+@media (min-width: 1300px) {
+.sidebar {
+    display: flex
+}
+  }
+.sidebar > * + * {
+    margin-top: 30px;
+  }
+.sidebar__section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+.sidebar__section--tasks {
+      flex: 1;
+    }
+/* create wrapper with fixed height (position absolute 0 0 0 0)
+  to use 'flex-grow' on task list and have scroll on flexible block */
+.sidebar__tasks-wrap {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+.sidebar__title {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: #afb3c3;
+  }
+.user {
+  display: flex;
+  align-items: center;
+  font-display: row;
+}
+.user__avatar {
+    height: 65px;
+    width: 65px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: filter 0.2s ease-out;
+  }
+.user__avatar:hover {
+      filter: brightness(0.5);
+    }
+.user__avatar img {
+      height: 100%;
+      width: 100%;
+    }
+.user__avatar--small {
+      max-height: 35px;
+      max-width: 35px;
+    }
+.user__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 200px;
+    padding-left: 20px;
+  }
+.user__name {
+    display: inline;
+    margin-bottom: 2px;
+    margin-left: -7px;
+    padding: calc(7px / 2) 7px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #262f56;
+  }
+.user__position {
+    font-size: 1rem;
+    color: #afb3c3;
+  }
+.notification {
+  display: flex;
+  position: relative;
+
+  padding: 7px;
+  border-radius: 8px;
+}
+.notification__icon {
+    font-size: 2rem;
+    color: #afb3c3;
+  }
+.notification__number {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20px;
+    width: 20px;
+    background-color: #9d63e2;
+    border-radius: 50%;
+
+    font-size: 0.7rem;
+    color: #fff;
+  }
+.searchbar {
+  position: relative;
+  overflow-x: hidden;
+}
+.searchbar__input {
+    height: 40px;
+    width: 100%;
+    padding: 0 40px 0 15px;
+
+    background-color: #f5f6f8;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 1rem;
+    color: #262f56;
+  }
+.searchbar__input:focus {
+    outline: none;
+  }
+.searchbar__input:focus + .searchbar__btn {
+    transform: translate(-35px, -50%);
+  }
+.searchbar__btn {
+    display: flex;
+
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    padding: 5px;
+
+    font-size: 1.2rem;
+    color: #fff;
+
+    background-color: #9d63e2;
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s ease-out;
+    transition-property: transform, background-color, color;
+  }
+.searchbar__btn:hover {
+      background-color: #fff;
+      color: #262f56;
+      box-shadow: inset 0px 0px 0px 2px rgba(157,99,226, 0.2);
+    }
+::-moz-placeholder {
+  color: #bec2d5;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+  color: #bec2d5;
+  opacity: 1; /* Firefox */
+}
+::placeholder {
+  color: #bec2d5;
+  opacity: 1; /* Firefox */
+}
+.taskcard {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 15px;
+  /*background-color: #fff;
+  border: 1px solid silver;*/
+  border-radius: 10px;
+
+  list-style: none;
+}
+/* space between different card sections */
+.taskcard > * + * {
+    margin-top: 15px;
+  }
+.taskcard__container {
+    position: relative;
+    flex-grow: 1; /* to allow scroll on flexible element */
+    overflow: auto;
+    min-height: 0; /* Firefox */
+
+    /* create space for scrollbar, and avoid overlap with cards */
+    padding-right: 20px;
+    margin-right: -20px;
+  }
+/*mask: linear-gradient(to top, transparent 1%, black 8%),
+      linear-gradient(to bottom, transparent 1%, black 8%);
+    mask-composite: intersect; */
+.taskcard__container > * + * {
+      margin-top: 22px;
+    }
+.taskcard__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+.taskcard__colortag {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-right: 20px;
+    background-color: #f5f6f8;
+    border-radius: 50%;
+  }
+.taskcard__colortag--purple {
+      background-color: #9d63e2;
+    }
+.taskcard__colortag--yellow {
+      background-color: #f3cf50;
+    }
+.taskcard__colortag--cyan {
+      background-color: #55d6d3;
+    }
+.taskcard__title {
+    font-size: 1.2rem;
+    color: #262f56;
+  }
+.taskcard__content {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 300;
+    color: #afb3c3;
+  }
+.taskcard__infos {
+    display: flex;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #afb3c3;
+  }
+.taskcard__infos-icon {
+    margin-right: 10px;
+    font-size: 0.9rem;
+  }
+.taskcard__infos-icon--high-priority {
+      color: #f45757;
+    }
+.taskcard__infos-icon--middle-priority {
+      color: #f3aa50;
+    }
+.taskcard__infos-icon--low-priority {
+      color: #66b039;
+    }
+.taskcard__priority {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+.taskcard__deadline {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+.upgrade {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: linear-gradient(45deg, #ccf3f2, #a4d7e6);
+  border-radius: var(--radius_big);
+}
+@media screen and (min-width: 450px) {
+.upgrade {
+    display: flex
+}
+  }
+@media (min-width: 768px) {
+.upgrade {
+    padding: 20px
+}
+  }
+@media (min-width: 992px) {
+.upgrade {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 30px 25px
+}
+  }
+.upgrade__txt {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+.upgrade__txt::before {
+      content: "✨👑✨";
+    }
+@media (min-width: 576px) {
+
+  .upgrade__txt {
+      margin-right: 30px
+  }
+      .upgrade__txt::before {
+        display: none;
+      }
+  }
+.upgrade h2 {
+    display: none;
+    font-size: 1rem;
+    color: #262f56;
+  }
+@media (min-width: 576px) {
+
+  .upgrade h2 {
+      display: block
+  }
+  }
+@media (min-width: 768px) {
+
+  .upgrade h2 {
+      font-size: 1.2rem
+  }
+  }
+@media (min-width: 992px) {
+
+  .upgrade h2 {
+      font-size: 1.6rem
+  }
+  }
+.upgrade p {
+    display: none;
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+@media (min-width: 992px) {
+
+  .upgrade p {
+      display: block
+  }
+  }
+.calendar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+
+  background-color: #fff;
+  border-radius: var(--radius_big);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 576px) {
+.calendar {
+    padding: 20px
+}
+  }
+.calendar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+.calendar__month-txt {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #262f56;
+  }
+@media (min-width: 576px) {
+
+  .calendar__month-txt {
+      font-size: 1.1rem
+  }
+  }
+.calendar__today-txt {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #9d63e2;
+  }
+@media (min-width: 576px) {
+
+  .calendar__today-txt {
+      font-size: 0.9rem
+  }
+  }
+.calendar__wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+.calendar__days-name {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+  }
+@media (min-width: 576px) {
+
+  .calendar__days-name {
+      gap: 15px;
+      margin-bottom: 20px;
+      padding-bottom: 15px
+  }
+  }
+.calendar__days-name li {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #bec2d5;
+      text-transform: uppercase;
+      text-align: center;
+      list-style: none;
+
+      overflow: hidden;
+      white-space: nowrap;
+    }
+@media (min-width: 576px) {
+
+    .calendar__days-name li {
+        font-size: 0.9rem;
+        text-align: left
+    }
+  }
+.calendar__week-days {
+    flex: 1;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    counter-reset: days;
+  }
+@media (min-width: 576px) {
+
+  .calendar__week-days {
+      gap: 5px
+  }
+  }
+@media (min-width: 576px) {
+
+  .calendar__week-days {
+      gap: 15px
+  }
+  }
+.calendar__week-days li {
+      list-style: none;
+      counter-increment: days;
+    }
+.calendar__day {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+
+    padding: 5px;
+    padding-top: 40px;
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    background-color: #f5f6f8;
+  }
+@media (min-width: 576px) {
+
+  .calendar__day {
+      padding: 10px;
+      padding-top: 40px;
+      border: none;
+      border-radius: 16px
+  }
+  }
+.calendar__day:first-child {
+      grid-column-start: 3;
+    }
+.calendar__day::after {
+      content: counter(days);
+      position: absolute;
+      top: 8px;
+      left: 5px;
+
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #afb3c3;
+    }
+@media (min-width: 576px) {
+
+    .calendar__day::after {
+        top: 15px;
+        left: 10px
+    }
+  }
+.calendar__day--busy {
+      background-color: #fff;
+      box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.05);
+    }
+.calendar__day--busy::after {
+      color: #262f56;
+    }
+.calendar__task {
+    display: flex;
+    flex-direction: column;
+  }
+.calendar__task-tags-wrap {
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+  }
+/* remove default space between 'inline-block'span */
+@media (min-width: 576px) {
+
+  .calendar__task-tags-wrap {
+      justify-content: flex-start
+  }
+  }
+.calendar__task-tags-wrap > * + * {
+      margin-left: 1vw;
+    }
+@media (min-width: 576px) {
+
+    .calendar__task-tags-wrap > * + * {
+        margin-left: 5px
+    }
+  }
+.calendar__task-tag {
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    background-color: #f5f6f8;
+    border-radius: 50%;
+  }
+@media (min-width: 576px) {
+
+  .calendar__task-tag {
+      height: 7px;
+      width: 7px
+  }
+  }
+.calendar__task-tag--purple {
+      background-color: #9d63e2;
+    }
+.calendar__task-tag--yellow {
+      background-color: #f3cf50;
+    }
+.calendar__task-tag--cyan {
+      background-color: #55d6d3;
+    }
+.calendar__task-counter {
+    display: none;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #262f56;
+  }
+@media (min-width: 768px) {
+
+  .calendar__task-counter {
+      display: block
+  }
+  }
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+
+  background-color: #9d63e2;
+  border: none;
+  border-radius: 10px;
+
+  transition: 0.2s ease-out;
+  transition-property: background-color, color;
+}
+.button:hover {
+    background-color: #fff;
+    color: #262f56;
+  }
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 25px;
+  width: 25px;
+  transform: translate(-50%, -50%); /* center fake-cursor on mouse */
+  background-color: rgb(22, 36, 40);
+  border-radius: 50%;
+  opacity: 0.15;
+  pointer-events: none; /* allow select on click underneath */
+
+  transition: all 0s ease-out;
+  transition-property: height, width;
+
+  z-index: 999999;
+}
+
