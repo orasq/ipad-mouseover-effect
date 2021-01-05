@@ -473,7 +473,7 @@ img {
 }
 @media (min-width: 992px) {
 .main-wrapper {
-    height: 100vh;
+    height: calc(100vh - (2 * 15px));
     max-height: 985px;
     border-radius: 50px;
     flex-direction: row
