@@ -13,7 +13,7 @@
   overflow: hidden;
 
   @mixin l_screen {
-    height: 100vh;
+    height: calc(100vh - (2 * $body_padding));
     max-height: 985px;
     border-radius: 50px;
     flex-direction: row;
