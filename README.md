@@ -8,7 +8,7 @@ I used the other day for the first time the Magic Keyboard on an iPad Pro, and i
 
 I wanted to see what it takes to reproduce the same effect with Javascript.
 
-The process was rather straightforward. The main challenge was to make the hover effect follow the link when scrolling (see the "My tasks" list on the right) and disable the effect when the link is overflowing its container.
+The process was rather straightforward. The main challenge was to make the hover effect follow the link while scrolling (see the "My tasks" list on the right) and disable the effect when the link is overflowing its container.
 
 You can have a preview of the problem on the calendar, where I didn't fix the issue (resizing the window to make the calendar overflow may be necessary).
 
