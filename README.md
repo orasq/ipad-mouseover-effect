@@ -13,4 +13,4 @@ The process was rather straightforward. The main challenge was to make the hover
 You can have a preview of the problem on the calendar, where I didn't fix the issue (resizing the window to make the calendar overflow may be necessary).
 
 ## Credits
-Design by [Kate Zagoruyko](https://dribbble.com/shots/14832717-Website-for-freelancers) - I do not own any rights on this design
+Design by [Kate Zagoruyko](https://dribbble.com/shots/14832717-Website-for-freelancers) - I do not own any rights on this design.
